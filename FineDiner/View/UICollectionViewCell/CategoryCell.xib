@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCell" customModule="FineDiner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="188" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVp-EV-5rs">
+                        <rect key="frame" x="5" y="5" width="178" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most Selling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJj-Jp-wOu">
+                                <rect key="frame" x="0.0" y="0.0" width="178" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="pIK-9l-gpa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zJj-Jp-wOu" secondAttribute="bottom" id="5o2-wU-HkW"/>
+                            <constraint firstItem="zJj-Jp-wOu" firstAttribute="top" secondItem="OVp-EV-5rs" secondAttribute="top" id="hhM-W0-rAW"/>
+                            <constraint firstAttribute="trailing" secondItem="zJj-Jp-wOu" secondAttribute="trailing" id="i6w-Yf-LBb"/>
+                            <constraint firstItem="zJj-Jp-wOu" firstAttribute="leading" secondItem="OVp-EV-5rs" secondAttribute="leading" id="wfe-a6-TdP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="OVp-EV-5rs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="6fQ-89-g4f"/>
+                <constraint firstItem="OVp-EV-5rs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="l0k-H6-YRK"/>
+                <constraint firstAttribute="bottom" secondItem="OVp-EV-5rs" secondAttribute="bottom" constant="5" id="tjY-Gb-kRS"/>
+                <constraint firstAttribute="trailing" secondItem="OVp-EV-5rs" secondAttribute="trailing" constant="5" id="xgg-dP-Fl1"/>
+            </constraints>
+            <size key="customSize" width="188" height="96"/>
+            <connections>
+                <outlet property="categoryLbl" destination="zJj-Jp-wOu" id="7cl-vh-WRA"/>
+                <outlet property="categoryView" destination="OVp-EV-5rs" id="tg2-df-BsG"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="95.089285714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>
